@@ -5,7 +5,7 @@
 */
 
 import React, { Component } from "react";
-import {Tree } from 'tinper-bee';
+import Tree from 'bee-tree';
 
 const x = 6;
 const y = 5;

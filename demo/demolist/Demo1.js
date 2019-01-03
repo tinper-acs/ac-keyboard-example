@@ -3,11 +3,9 @@
 * @title table 快捷键示例应用。
 * @description tab 键可以默认选中第一行、↑(上箭) 选中上一条、↓(下箭) 选中下一条 更多api 见文档说明。
 */
-
 import React, { Component } from "react";
-import {Checkbox, Button } from 'tinper-bee';
 import Table from 'bee-table';
-
+import Checkbox from 'bee-checkbox';
 
 const columns = [
     {

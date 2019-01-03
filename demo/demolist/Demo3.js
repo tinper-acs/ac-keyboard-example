@@ -5,8 +5,8 @@
 */
 
 import React, { Component } from "react";
-import DatePicker from "tinper-bee/lib/Datepicker";
-import {  Row, Col  } from 'tinper-bee';
+import DatePicker from "bee-datepicker/build/Datepicker";
+import { Row, Col } from 'bee-layout';
 
 import zhCN from "rc-calendar/lib/locale/zh_CN";
 import moment from "moment";
