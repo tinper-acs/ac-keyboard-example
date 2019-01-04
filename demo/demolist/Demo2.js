@@ -1,7 +1,6 @@
 /**
-*
 * @title be-tree 快捷键示例应用。
-* @description tab 进入焦点，且选中第一行。 ↑(上箭)、↓(下箭) 上一行、下一行。 ←(左箭)、→(右箭) 收起、展开。 focusable API
+* @description tab 进入焦点，且选中第一行。 ↑(上箭)、↓(下箭) 上一行、下一行。 ←(左箭)、→(右箭) 收起、展开。 focusable API  使用步骤：鼠标焦点进入到input中，按tab 切换焦点，当焦点在输入框中，按下 ↑(上箭)、↓(下箭) 上一行、下一行。 ←(左箭)、→(右箭) 收起、展开。 
 */
 
 import React, { Component } from "react";
