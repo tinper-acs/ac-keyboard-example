@@ -1,7 +1,7 @@
 /**
 *
 * @title bee-datepicker  快捷键示例应用
-* @description esc 关闭面板。 ↓(下箭) 打开日期面板  使用步骤：鼠标焦点进入到input中，按tab 切换焦点，当焦点在输入框中，按下 ↓(下箭) 即可 打开日期面板。esc 即可关闭面板
+* @description esc 关闭面板。 ↓(下箭) 打开日期面板
 */
 import React, {Component} from "react";
 import DatePicker from "tinper-bee/lib/Datepicker";
