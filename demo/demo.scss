@@ -5,6 +5,10 @@
 @import "../static/demo/atom-one-dark.css";
 
 .demoPadding{
+    >input{
+        margin:15px;
+        margin-left:0px;
+    }
     button{
         margin: auto 5px;
     }
@@ -16,6 +20,10 @@
     }
     .selected{
         background: rgb(227,242,253);
-      }
+    }
+
+    .u-table{
+        border: 1px solid #ccc;
+    }
       
 }

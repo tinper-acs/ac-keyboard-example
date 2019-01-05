@@ -1,6 +1,6 @@
 /**
 *
-* @title table 快捷键示例应用。
+* @title table 快捷键示例应用
 * @description tab 键可以默认选中第一行、↑(上箭) 选中上一条、↓(下箭) 选中下一条 更多api 见文档说明。   使用步骤：鼠标焦点进入到input中，按tab 切换焦点，当焦点在输入框中，按下 ↓(下箭) 即可 选中第一行、↑(上箭) 选中上一条、↓(下箭) 选中下一条 
 */
 import React, { Component } from "react";
@@ -103,7 +103,9 @@ const columns = [
           onKeyDown={this.onKeyDown}
           onTableKeyDown={this.onTableKeyDown} 
           scroll={{ x: "110%", y: 140 }}
-        /> </div>
+        /> 
+         <input />
+        </div>
       );
     }
   }
