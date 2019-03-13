@@ -31,6 +31,11 @@
 
 ## 代码演示
 
+<iframe src="https://tinper-acs.github.io/ac-keyboard-example/index.html" width="700px" height="500px" frameborder="0" scrolling="no"> </iframe>
+
+
+
+
 ## 自定义组件键盘操作解决方案
 
 这里推荐使用组件库 [react-hot-keys](https://github.com/jaywcjlove/react-hotkeys)
