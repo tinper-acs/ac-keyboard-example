@@ -1,84 +1,39 @@
-## app-component-templ
+## 全键盘操作
 
----
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='red'>tinper-bee 支持快捷键从 V1.6.3 开始就有部分组件支持快捷键，但之前都是零零散散的，目前 V1.6.9的版本是最稳定的版本，支持的快捷键下面将详细描述。(官方建议使用 tinper-bee 请使用 V1.6.9版本) </font>
 
-ac-tools init 时模版文件，用于react组件开发的模版
+## tinper-bee(V1.6.9)快捷键规范定义
 
-<b>开始之前确保安装了 ac-tools的全局包</b>
+| 组件名称 | 快捷键 | 快捷键描述 |
+| --- | --- | --- |
+| bee-select | ↑、↓、esc、enter |   ↑(上箭)、↓(下箭) 切换选项功能。 esc 关闭下拉项。enter 选中下拉框。 
+| bee-datePicker | esc、delete、↓(下箭) |  esc 关闭面板。 ↓(下箭) 打开日期面板。|
+| bee-modal | esc | 支持 esc 关闭。|
+| bee-message | esc | 支持 esc 关闭。|
+| bee-notification | esc | 支持 esc 关闭。|
+| bee-tree | tab、↑、↓、←、→ |  focusable API 是否开启快捷键。 tab 进入焦点，且选中第一行。 ↑(上箭)、↓(下箭) 上一行、下一行。 ←(左箭)、→(右箭) 收起、展开。 |
+| bee-table | (tab、↑、↓) |  tab 进入焦点，且选中第一行。↑(上箭)、↓(下箭) 上一行、下一行。 且提供onKeyTab、onKeyUp、onKeyDown、onTableKeyDown、tabIndex 等一系列api |
+| bee-menu | (Enter、↑、↓、←、→) | Enter 确认选中行。 ↑(上箭)、↓(下箭) 上一行、下一行。 ←(左箭)、→(右箭)  |
+| bee-radio | (Space、↑、↓、←、→) |  Space: 如未选中，则检查聚焦单选按钮，反之则改变选中。  →(右箭)、↓(下箭):  将焦点移动到下一个按钮上，依次循环选中。  ←(左箭)、↑(上箭):  将焦点移动到上一个按钮上，依次循环选中。 |
+| bee-checkbox | Space(空格键) | 当复选框具有焦点时，Space按键会更改复选框的状态 |
+| bee-timePicker | delete、esc| delete清空日期。esc关闭面板|
 
-### 目录结构
+> 部分快捷键需要参考该组件的示例。
 
-```bash
-.
-├── config
-│   ├── webpack.base.js
-│   ├── webpack.config.dev.js       # 开发环境配置
-│   ├── webpack.config.ghpages.js   # 打包放到github.io环境配置
-│   ├── webpack.config.prod.js      # 发布组件环境配置
-├── demo
-│   ├── demolist
-│   │   └── Demo1.js                # 实例1，调用src中的组件，进行展示
-│   ├── demo.scss                   # demo中需要的基础样式
-│   ├── index-demo-base.js          # demo模版文件
-│   └── index.js                    # ac-tools sample生成的文件
-├── package.json
-├── docs
-│   ├── demolist
-│   │   └── Demo1.js                # 实例1，调用src中的组件，进行展示
-│   ├── demo.scss                   # demo中需要的基础样式
-│   ├── index-demo-base.js          # demo模版文件
-│   └── index.js                    # ac-tools sample生成的文件
-├── ghpages                         # 实例打包文件
-├── mock                            # mock数据 
-├── src
-│   ├── assets                      # ac-tools md需要的静态文件
-│   ├── temp                        
-│   │   └── index.js                # 组件js逻辑 
-│   │   └── style.scss  			   # 组件样式
-│   └── index.js                    # 组件出口
-├── static                          # 模版静态文件
-├── .babelrc    
-├── .editorconfig                   # 给编辑器的规范  
-├── .eslitrc                        # 代码规范(采用airbnb规范，默认不打开的，在webpack.config.dev.js 中注释部分放开就启用)                      
-├── .package.json                  
-└── .postcss.config.js
-```
+## 快捷键示例操作说明
+  1. 【bee-table】 鼠标焦点进入到input中，按tab 切换焦点，进入到table的焦点中，且默认选中第一行，按下 ↓(下箭)  选中下一条、↑(上箭) 选中上一条
 
-### 常用命令
+  2. 【bee-tree】 按tab 焦点进入到tree示例中，按下 ↑(上箭)、↓(下箭) 上一行、下一行。 ←(左箭)、→(右箭) 收起。
+  
+  3. 【bee-datepicker】 鼠标焦点进入到input中，按tab 切换焦点，当焦点在输入框中，按下 ↓(下箭) 即可 打开日期面板。esc 即可关闭面板
 
-将 demo合并到demolist的实例中
+## 示例 
 
-```
-ac-tools sample 
-```
+## 代码演示
 
-启动开发环境
+## 自定义组件键盘操作解决方案
 
-```
-npm run dev
-```
+这里推荐使用组件库 [react-hot-keys](https://github.com/jaywcjlove/react-hotkeys)
 
-实例代码打包
-
-```
-npm run deploy
-```
-
-将markdown 文件转为静态文件，并上传github.io网站
-
-```
-ac-tools md
-```
-
-生成组件
-
-```
-npm run build
-```
-
-上传ynpm或者npm
-
-```
-ynpm publish      # npm publish
-```
+## [问题反馈](https://github.com/iuap-design/tinper-bee/issues)
 
